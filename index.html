@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Want to make money online?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
+
+<style>
+/** Global **/
+body {
+  background-color: #E9ECED;
+}
+
+.myContainer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.headerText {
+  font-size: 2vw;
+  line-height: 120%;
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.subHeader {
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+  }
+
+.questionNumber {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  font-size: 1.5vw;
+  
+}
+.questionNumberSub {
+  color: red;
+  
+  
+}
+
+.myButton {
+	background-color:#5fb3d1;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:14px 48px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#5fa2cf;
+  color: white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+  color: white;
+}
+.money {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.remainingNumber {
+  padding-top: 10px;
+  font-size: 1vw;
+}
+
+/** Phone **/
+@media only screen and (max-width: 600px) {
+
+  .myContainer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.headerText {
+  font-size: 7vw;
+  line-height: 120%;
+  padding-bottom: 10px;
+}
+
+.subHeader {
+    font-size: 5vw;
+    padding-bottom: 10px;
+  }
+
+.questionNumber {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  font-size: 6vw;
+  
+}
+.questionNumberSub {
+  color: red;
+  
+  
+}
+
+.myButton {
+	background-color:#5fb3d1;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:14px 48px;
+	text-decoration:none;
+  width: 90%;
+}
+.myButton:hover {
+	background-color:#5fa2cf;
+  color: white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+  color: white;
+}
+.money {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.remainingNumber {
+  padding-top: 10px;
+  font-size: 4vw;
+}
+
+}
+
+
+
+</style>
+
+
+
+  </head>
+
+  <body>
+
+   
+
+    <!-- Page Content -->
+<div class="container myContainer">
+
+
+<div class="headerText">We're looking for participants in <strong><script>document.write(geoplugin_region());</script></strong> to test new products from 1000s of companies!</div>
+<div class="subHeader"><em>Make Up to $350+ by sharing your opinions & influencing products!</em></div>
+
+
+<img src="money.jpg" class="money"/>
+<div class="questionNumber">Question <span class="questionNumberSub">0</span> out of <span class="questionNumberSub">3</span>...</div>
+<a href="/page2.html" class="myButton">Click Here to Start</a>
+<div class="remainingNumber"><strong>We only have <span id="scarcityCounter" style="color:red; text-decoration: underline;">18</span> spots remaining in <script>document.write(geoplugin_region());</script></strong>.</div>
+<br>
+<br>
+<br>
+
+
+<script>
+var interval = setInterval(function () {
+if ($('#scarcityCounter').is(':visible')) {
+var timeleft = 18;
+var downloadTimer = setInterval(function(){
+timeleft--;
+document.getElementById("scarcityCounter").textContent = timeleft;
+if(timeleft <= 1)
+clearInterval(downloadTimer);
+},6000);
+clearInterval(interval);
+} else {
+var placeholder = 1;
+}
+},1000);
+</script>
+
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+
+</html>
